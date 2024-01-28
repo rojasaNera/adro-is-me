@@ -1,0 +1,111 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 75%;
+				margin: 0 auto;
+			}
+			.sub-title {
+				font-style: italic;
+				color: var(--text-secondary);
+				margin-bottom: 2em;
+			}
+			.section-box {
+				padding: 1em;
+				border-radius: 12px;
+				transition: box-shadow 0.3s;
+				cursor: pointer;
+			}
+			.section-box:hover {
+				box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1 class="text-center">¡Bienvenido a {SITE_TITLE}!</h1>
+			<p class="sub-title text-center mb-8">
+				Explora un Mundo de Tecnología, Aventuras en la Montaña y
+				Reflexiones Inspiradoras.
+			</p>
+
+			<p>
+				¡Hola, explorador digital y amante de la naturaleza! Estás a
+				punto de embarcarte en un viaje único que fusiona lo mejor de
+				dos mundos: la tecnología y la majestuosidad de las montañas.
+				Permíteme guiarte a través de las distintas secciones de este
+				rincón virtual donde la inspiración y el conocimiento se
+				entrelazan.
+			</p>
+
+			<div class="section-box mt-4">
+				<strong>&#128187 Tecnología en Acción</strong>
+				<p class="text-base text-gray mt-3">
+					Descubre junto a mí el fascinante mundo de la tecnología.
+					Exploraremos juntos nuevos lenguajes de programación,
+					prácticos tutoriales y consejos para aquellos que sueñan con
+					ser Product Owners en el mundo de las startups.
+				</p>
+			</div>
+
+			<div class="section-box">
+				<strong>&#129495 Aventuras en la Montaña</strong>
+				<p class="text-base text-gray mt-3">
+					Te invito a sumergirte en las historias de mis aventuras en
+					la montaña. Aquí encontrarás guías detalladas y el espíritu
+					aventurero que me impulsa a explorar lo desconocido.
+				</p>
+			</div>
+
+			<!-- <div class="section-box">
+				<strong>Reflexiones Espirituales</strong>
+				<p class="text-base text-gray mt-3">
+					Compartiré contigo reflexiones íntimas sobre mi vida espiritual y fe. Exploraremos mensajes inspiradores que han dejado huella en mi alma y consejos para encontrar equilibrio y paz en medio de la rutina diaria.
+				</p>
+			</div> -->
+
+			<!-- <div class="section-box">
+				<strong>Inspiración y Motivación</strong>
+				<p class="text-base text-gray mt-3">
+					Vamos a agregar un toque de motivación a tu día con mensajes que me han impactado. Analizaremos cómo estas palabras pueden transformar nuestra mentalidad y celebraremos juntos historias reales de superación y éxito.
+				</p>
+			</div> -->
+
+			<div class="section-box">
+				<strong>&#128211 Ayuda Tecnológica para Principiantes</strong>
+				<p class="text-base text-gray mt-3">
+					Si estás dando tus primeros pasos en el vasto mundo
+					tecnológico, esta sección está hecha especialmente para ti.
+					Compartiré recursos útiles, experiencias personales y
+					consejos prácticos.
+				</p>
+			</div>
+
+			<div class="section-box">
+				<strong>&#129464 Comunidad Solidaria</strong>
+				<p class="text-base text-gray mt-3">
+					Me llena de orgullo ser parte de una comunidad solidaria.
+					Aquí compartiré historias de ayuda mutua, proyectos
+					solidarios y oportunidades para hacer una diferencia en la
+					vida de los demás.
+				</p>
+			</div>
+			<p class="mt-6 text-center italic">
+				¡Prepárate para una experiencia única donde la tecnología, la
+				naturaleza y la inspiración se encuentran!<br />
+				¡Explora, aprende y comparte con {SITE_TITLE}!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

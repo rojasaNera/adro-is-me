@@ -1,0 +1,71 @@
+---
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Adro &#128211. All rights reserved.
+	<div class="social-links">
+		<a
+			href="https://www.linkedin.com/in/adrian-ezequiel-rojas-1247b43b"
+			target="_blank"
+		>
+			<span class="sr-only">Follow me on linkedin</span>
+			<svg viewBox="-271 283.9 256 235.1" width="32px" height="32px">
+				<g>
+					<rect
+						fill="currentColor"
+						x="-264.4"
+						y="360"
+						width="49.9"
+						height="159.7"></rect>
+					<path
+						fill="currentColor"
+						d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z"
+					></path>
+					<path
+						fill="currentColor"
+						d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"
+					></path>
+				</g>
+			</svg>
+		</a>
+		<a href="https://www.instagram.com/rojasadrian.e" target="_blank">
+			<span class="sr-only">Follow me on instagram</span>
+			<svg viewBox="-271 273 256 256" height="32px" width="32px">
+				<path
+					fill="currentColor"
+					d="M-64.5,273h-157c-27.3,0-49.5,22.2-49.5,49.5v52.3v104.8c0,27.3,22.2,49.5,49.5,49.5h157c27.3,0,49.5-22.2,49.5-49.5V374.7 v-52.3C-15.1,295.2-37.3,273-64.5,273z M-50.3,302.5h5.7v5.6v37.8l-43.3,0.1l-0.1-43.4L-50.3,302.5z M-179.6,374.7 c8.2-11.3,21.5-18.8,36.5-18.8s28.3,7.4,36.5,18.8c5.4,7.4,8.5,16.5,8.5,26.3c0,24.8-20.2,45.1-45.1,45.1s-44.9-20.3-44.9-45.1 C-188.1,391.2-184.9,382.1-179.6,374.7z M-40,479.5C-40,493-51,504-64.5,504h-157c-13.5,0-24.5-11-24.5-24.5V374.7h38.2 c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18.2-5.2-26.3H-40V479.5z"
+				></path>
+			</svg>
+		</a>
+		<a href="https://github.com/withastro/astro" target="_blank">
+			<span class="sr-only">Listen to music with me</span>
+			<svg width="32px" height="32px" viewBox="0 0 192 192">
+				<g>
+					<path fill="currentColor" d="M24.419 57.512a6 6 0 1 0 3.162 11.576L24.42 57.512Zm5.706 34.312a6 6 0 0 0 3.421 11.502l-3.421-11.502Zm5.66 34.469a6 6 0 1 0 3.817 11.377l-3.817-11.377Zm105.947 19.99a6.001 6.001 0 0 0 5.69-10.566l-5.69 10.566Zm14.797-31.392a6 6 0 1 0 5.53-10.65l-5.53 10.65Zm14.758-31.384a6 6 0 0 0 5.426-10.704l-5.426 10.704ZM27.581 69.087C44.481 64.472 62.304 62 80.726 62V50c-19.5 0-38.385 2.615-56.307 7.512l3.162 11.576Zm5.965 34.239c14.92-4.438 30.759-6.828 47.18-6.828v-12c-17.59 0-34.582 2.56-50.602 7.326l3.422 11.502Zm6.056 34.344c12.886-4.324 26.718-6.674 41.124-6.674v-12c-15.718 0-30.839 2.565-44.941 7.297l3.817 11.377Zm41.124-6.674c22.134 0 42.92 5.547 61.006 15.287l5.69-10.566c-19.799-10.662-42.536-16.721-66.696-16.721v12Zm0-34.498c27.404 0 53.198 6.655 75.803 18.393l5.53-10.65c-24.28-12.607-51.967-19.743-81.333-19.743v12Zm0-34.498c32.665 0 63.454 7.767 90.561 21.507l5.426-10.704C147.956 58.228 115.311 50 80.726 50v12Z"></path>
+				</g>
+			</svg>
+		</a>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>
